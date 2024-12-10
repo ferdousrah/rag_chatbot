@@ -1,3 +1,4 @@
+# chatbot/views.py
 from django.shortcuts import render
 
 def chatbot(request):

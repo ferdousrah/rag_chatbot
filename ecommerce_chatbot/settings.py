@@ -79,11 +79,16 @@ ASGI_APPLICATION = "ecommerce_chatbot.asgi.application"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'rag_chatbot',  # Replace with your PostgreSQL database name
+        'USER': 'postgres',  # Replace with your PostgreSQL user
+        'PASSWORD': 'tapon2@19',  # Replace with your PostgreSQL password
+        'HOST': 'localhost',  # Use 'localhost' if PostgreSQL is installed locally
+        'PORT': '5432',  # Default PostgreSQL port
     }
 }
+
 
 
 # Password validation
